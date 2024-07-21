@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family:"poppins", sans-serif;
+    background: #222831;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #64646f33 0px 7px 29px 0 px;
+    background: #313637;
+}
+
+.tite {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #edf1f3;
+}
+.chat {
+    height: 500px;
+    overflow-y: scroll;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid rgb(240, 240, 240);
+    border-radius: 5px;
+    background:#222831;
+}
+
+
