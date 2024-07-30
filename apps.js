@@ -29,7 +29,7 @@ function chatbot(input) {
             output = "We are located at Galli, Lalitpur. Our contact number is +977 9828711925. We  are open from 8 AM to 8 PM.";
     }
     else if (input.includes("location map") || input.includes("map") ) {
-        output = "We are located at Galli, Lalitpur. click to see the location https://maps.app.goo.gl/8S3JU81hcU3LcGz26.";
+        output = "We are located at Galli, Lalitpur. click to see the location .";
 }
     else if (input.includes("your number") || input.includes("your phone number ")) {
         output = "+977 9828711925";
@@ -48,7 +48,7 @@ function chatbot(input) {
         - Ice Latte: Rs 195
         - Iced Americano: Rs 165
         - Mocha Madness: Rs 250
-        . We are open from 8 AM to 8 PM.`;
+        . what you would you like to take sir/madam`;
     } 
     else {
         for (let item in menu) {
