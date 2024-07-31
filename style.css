@@ -14,14 +14,16 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 7px 29px 0px #64646f33;
-    background: #313637;
+    background:url("images/bg1.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .title {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    color: #edf1f3;
+    color: #eae8e5;
 }
 
 .chat {
@@ -29,9 +31,11 @@ body {
     overflow-y: scroll;
     margin: 20px 0;
     padding: 10px;
-    border: 2px solid rgb(240, 240, 240);
+    border-top: 2px solid rgb(92, 91, 89);
     border-radius: 5px;
-    background: #222831;
+    background:url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .message {
@@ -59,7 +63,7 @@ body {
 
 .user .avatar {
     order: 2;
-    background: #000;
+    background:url("images/user.png");
     background-size: cover;
 }
 
@@ -96,31 +100,32 @@ body {
 
 .input:focus {
     border-color: aquamarine;
-    color: #e3c9c9;
+    color: #000000;
 }
 
 .button {
     position: absolute;
-    width: 80px;
+    width: 87px;
     border: none;
     padding: 1px;
-    /* background: #000; */
-    color: white;
+    background: #0c0b0b;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     margin-top: .01rem;
-    margin-left: -4.1rem;
+    margin-left: -4.0rem;
     outline: none;
-    border-radius: 5px;
+    border-radius: 5%;
 }
 
 button i {
     font-size: 2.8rem;
-    color:black;
+    color:rgb(241, 255, 246);
+    border-radius: 20px;
 }
 button i:hover{
-    color:burlywood ;
+    color:rgb(132, 123, 123) ;
 }
 
 .chat::-webkit-scrollbar {

@@ -18,6 +18,8 @@ function chatbot(input) {
         output = "Hello there! How can I help you today?";
     } else if (input.includes("how are you")) {
         output = "I am doing great, thank you for asking! How about you?";
+    }else if (input.includes("i nedd manu ") || input.includes("can i have coffee ") ) {
+        output = "plz type menu ";
     } else if (input.includes("what is your name")) {
         output = "My name is Chatbot, but you can call me Chat. What is your name?";
     } else if (input.includes("what is your favorite coffe")) {
@@ -34,7 +36,7 @@ function chatbot(input) {
     else if (input.includes("your number") || input.includes("your phone number ")) {
         output = "+977 9828711925";
     } 
-    else if (input.includes("coffee menu") || input.includes("your menu")){
+    else if (input.includes("coffee menu") || input.includes("your menu") || input.includes("menu")){
         output = `Welcome to Coffee Corner! Here is our coffee menu:
         - Oreo Latte: Rs 250
         - Espresso: Rs 95
