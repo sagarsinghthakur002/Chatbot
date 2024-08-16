@@ -22,6 +22,8 @@ function chatbot(input) {
         output = "I am doing great, thank you for asking! How about you?";
     }else if (input.includes("i nedd manu ") || input.includes("can i have coffee ") ) {
         output = "yes why not ";
+    }else if (input.includes("about coffee")) {
+        output = "we are the top coffee shop in this location ";
     } else if (input.includes("what is your name")) {
         output = "My name is Chatbot, but you can call me Chat. What is your name?";
     } else if (input.includes("what is your favorite coffe")) {
