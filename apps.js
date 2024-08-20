@@ -14,47 +14,45 @@ function chatbot(input) {
         "iced americano": "Iced Americano: Rs 165",
         "mocha madness": "Mocha Madness: Rs 250"
     };
-                            // add by your self
-    if (input.toLowerCase() === "menu") {       
-    if (input.includes("hello") || input.includes("hi") || input.includes("hey") || input.includes("hlo")) {
+
+    input = input.toLowerCase();
+
+    if (input.includes("hello") || input.includes("hi") || input.includes("hey")) {
         output = "Hello there! How can I help you today?";
     } else if (input.includes("how are you")) {
         output = "I am doing great, thank you for asking! How about you?";
-    }else if (input.includes("i nedd manu ") || input.includes("can i have coffee ") ) {
-        output = "yes why not ";
-    }else if (input.includes("about coffee")) {
-        output = "we are the top coffee shop in this location ";
+    } else if (input.includes("can i have the menu") || input.includes("coffee menu") || input.includes("your menu")) {
+        output = `Welcome to Coffee Corner! Here is our coffee menu:\n
+        - Oreo Latte: Rs 250\n
+        - Espresso: Rs 95\n
+        - Doppio: Rs 120\n
+        - Latte: Rs 175\n
+        - Cappuccino: Rs 175\n
+        - Americano: Rs 135\n
+        - Frappe: Rs 325\n
+        - Hot Chocolate: Rs 195\n
+        - Blended Mocha: Rs 225\n
+        - Ice Latte: Rs 195\n
+        - Iced Americano: Rs 165\n
+        - Mocha Madness: Rs 250\n
+        What would you like to have, sir/madam?`;
+    } else if (input.includes("about coffee")) {
+        output = "We are the top coffee shop in this location.";
     } else if (input.includes("what is your name")) {
         output = "My name is Chatbot, but you can call me Chat. What is your name?";
-    } else if (input.includes("what is your favorite coffe")) {
-        output = "My favorite coffee is cappuccino, but I also like mocha  and frappe.";
+    } else if (input.includes("what is your favorite coffee")) {
+        output = "My favorite coffee is Cappuccino, but I also like Mocha and Frappe.";
     } else if (input.includes("what is your favorite food")) {
         output = "My favorite food is pizza, but I also like tacos and sushi.";
     } else if (input.includes("location") || input.includes("where are you located")) {
-        output = "We are located at Galli, Lalitpur. Our contact number is +977 9828711925. We  are open from 8 AM to 8 PM.";
-    }else if (input.includes("location map") || input.includes("map") ) {
-        output = "We are located at Galli, Lalitpur. click to see the location .";
-    }else if (input.includes("your number") || input.includes("your phone number ") || input.includes("your phone number ")) {
+        output = "We are located at Galli, Lalitpur. Our contact number is +977 9828711925. We are open from 8 AM to 8 PM.";
+    } else if (input.includes("location map") || input.includes("map")) {
+        output = "We are located at Galli, Lalitpur. Click to see the location.";
+    } else if (input.includes("your number") || input.includes("your phone number")) {
         output = "+977 9828711925";
-    }else if (input.includes("coffee menu") || input.includes("your menu") || input.includes("menu")){
-        output = `Welcome to Coffee Corner! Here is our coffee menu:
-        - Oreo Latte: Rs 250 ```````` 
-        - Espresso: Rs 95
-        - Doppio: Rs 120
-        - Latte: Rs 175
-        - Cappuccino: Rs 175
-        - Americano: Rs 135
-        - Frappe: Rs 325
-        - Hot Chocolate: Rs 195
-        - Blended Mocha: Rs 225
-        - Ice Latte: Rs 195
-        - Iced Americano: Rs 165
-        - Mocha Madness: Rs 250
-        . what you would you like to take sir/madam`;
-    } 
-    else {
+    } else {
         for (let item in menu) {
-            if (input.toLowerCase().includes(item)) {
+            if (input.includes(item)) {
                 output = menu[item];
                 break;
             }
