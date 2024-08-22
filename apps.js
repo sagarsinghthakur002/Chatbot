@@ -38,6 +38,8 @@ function chatbot(input) {
         What would you like to have, sir/madam?`;
     } else if (input.includes("about coffee")) {
         output = "We are the top coffee shop in this location.";
+    }else if (input.includes("can you help me ")) {
+        output = "yes , how can i help you";
     } else if (input.includes("what is your name")) {
         output = "My name is Chatbot, but you can call me Chat. What is your name?";
     } else if (input.includes("what is your favorite coffee")) {
