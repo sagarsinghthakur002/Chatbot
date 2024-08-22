@@ -46,6 +46,8 @@ function chatbot(input) {
         output = "My favorite food is pizza, but I also like tacos and sushi.";
     } else if (input.includes("location") || input.includes("where are you located")) {
         output = "We are located at Galli, Lalitpur. Our contact number is +977 9828711925. We are open from 8 AM to 8 PM.";
+    }else if (input.includes("location") || input.includes("where are you located")) {
+        output = "We are located at Galli, Lalitpur. Our contact number is +977 9828711925. We are open from 8 AM to 8 PM.";
     } else if (input.includes("location map") || input.includes("map")) {
         output = "We are located at Galli, Lalitpur. Click to see the location.";
     } else if (input.includes("your number") || input.includes("your phone number")) {
